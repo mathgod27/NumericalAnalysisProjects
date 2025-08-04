@@ -35,3 +35,4 @@ for k in range(max_iter):
 
 #print result
 print("Approximate solution:", x)
+
