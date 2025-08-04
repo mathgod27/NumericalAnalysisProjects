@@ -1,16 +1,15 @@
-# %%
-# Consider the following nonlinear function: f(x) = (x1 + 10x2)**2 + 5*(x3 - x4)**4 + 10*(x1 - x4)**4
+
+# Consider the following nonlinear function: f(x) = (x1 + 10*x2)**2 + 5*(x3 - x4)**4 + 10*(x1 - x4)**4
 # the initial guess x0 = [3;-1;0;1], step length alpha = 0.001, and the convergence threshold is set to 0.01. 
 #
 # Modify the in-class code to preform the gradient descent method. Also need to state the iterations and the final x values at convergence.
 
-# %%
 #In class code:
 
 # import the libraries
 import numpy as np
 import math
-#%%
+
 ## a function returns the Gradient vector at the input vector x_i
 ## note: the expression of each element in the Gradient vector is hard-coded based on the formula presented above, which is also given on Slide 40 of Topic 3.1
 
@@ -26,7 +25,7 @@ def getGradientVector(x_i):
 # a simple function returns the norm of an input vector
 def getNorm(v):
   return math.sqrt(v[0]*v[0] + v[1]*v[1] + v[2]*v[2] + v[3]*v[3])   #v[x_i]*v[x_i]
-#%%
+
 
 ## set an initial guess
 x_0 = np.array([[3.0], [-1.0], [0.0], [1.0]]) #we got this initial guess given in the problem
@@ -74,4 +73,4 @@ while True:
   x_i = x_i_plus1
   count = count + 1
   print()
-# %%
+
