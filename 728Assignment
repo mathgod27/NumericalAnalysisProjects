@@ -36,6 +36,8 @@ thresh = 0.01
 ## set step length (given in problem)
 alpha = 0.001
 
+
+#this whole part and onward is not edited 
 x_i = x_0
 count = 0
 while True:
